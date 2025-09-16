@@ -11,12 +11,12 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background: linear-gradient(135deg, #b80000, #ff3333);
+      background: #ffffff;
       position: relative;
       overflow: hidden;
     }
 
-    /* Watermark logo in background */
+    /* Faint watermark logo in background */
     body::before {
       content: "";
       position: absolute;
@@ -24,24 +24,23 @@
       left: 50%;
       transform: translate(-50%, -50%);
       background: url("/images/equinix.png") no-repeat center;
-      background-size: 500px auto;
+      background-size: 400px auto;
       opacity: 0.05;
-      width: 800px;
-      height: 800px;
+      width: 600px;
+      height: 600px;
       z-index: 0;
     }
 
-    /* Glassmorphism login card */
+    /* Login card */
     .login-card {
       position: relative;
       z-index: 1;
-      background: rgba(255, 255, 255, 0.85);
+      background: #fff;
       padding: 40px;
       border-radius: 16px;
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
       width: 340px;
       text-align: center;
-      backdrop-filter: blur(12px);
     }
 
     .login-card img {
@@ -68,7 +67,7 @@
     .login-card input:focus {
       border-color: #d6001c;
       outline: none;
-      box-shadow: 0 0 6px rgba(214, 0, 28, 0.4);
+      box-shadow: 0 0 6px rgba(214, 0, 28, 0.3);
     }
 
     .login-card button {
