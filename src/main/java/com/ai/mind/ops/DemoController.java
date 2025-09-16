@@ -1,7 +1,11 @@
 package com.ai.mind.ops;
 
+import java.util.HashMap;
+import java.util.Map;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -32,15 +36,30 @@ public class DemoController {
     }
 
     @PostMapping("/login")
-    public String login(@RequestParam String username, @RequestParam String password) {
+    public ResponseEntity<Map<String, Object>> login(
+            @RequestParam String username,
+            @RequestParam String password) {
+
         log.info("Login attempt with username: {}", username);
 
         String risky = null;
+        Map<String, Object> response = new HashMap<>();
+
         try {
-            return risky.toString();
+            // Simulate risky operation
+            return ResponseEntity.ok(Map.of(
+                    "status", "success",
+                    "message", risky.toString()
+            ));
         } catch (NullPointerException e) {
             log.error("Simulated NPE during login for user {}", username, e);
-            throw e;
+
+            response.put("status", "error");
+            response.put("message", "NullPointerException occurred");
+            response.put("details", e.toString()); // you can also add stacktrace if needed
+
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(response);
         }
     }
+
 }

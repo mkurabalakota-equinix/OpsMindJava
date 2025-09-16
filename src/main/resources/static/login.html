@@ -2,24 +2,108 @@
 <html>
 <head>
     <title>Login Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #74ABE2, #5563DE);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            width: 320px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            text-align: left;
+            font-weight: bold;
+            color: #444;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            outline: none;
+            transition: border 0.3s;
+        }
+
+        input:focus {
+            border-color: #5563DE;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 6px;
+            background: #5563DE;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #3e4ec2;
+        }
+
+        #response {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        #details {
+            display: none;
+            margin-top: 10px;
+            text-align: left;
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 8px;
+            color: #c7254e;
+            font-family: monospace;
+            font-size: 13px;
+            white-space: pre-wrap;
+        }
+    </style>
 </head>
 <body>
-<h1>Login Page</h1>
-<form id="loginForm">
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" required><br><br>
+<div class="login-container">
+    <h1>Login</h1>
+    <form id="loginForm">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
 
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required><br><br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
 
-    <button type="submit">Login</button>
-</form>
-
-<p id="response"></p>
+        <button type="submit">Login</button>
+    </form>
+    <p id="response"></p>
+    <pre id="details"></pre>
+</div>
 
 <script>
     document.getElementById("loginForm").addEventListener("submit", async function (event) {
-        event.preventDefault(); // stop page reload
+        event.preventDefault();
 
         const username = document.getElementById("username").value;
         const password = document.getElementById("password").value;
@@ -31,10 +115,27 @@
                 body: `username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}`
             });
 
-            const text = await response.text();
-            document.getElementById("response").innerText = text;
+            const respEl = document.getElementById("response");
+            const detailsEl = document.getElementById("details");
+
+            const data = await response.json();
+
+            if (response.ok) {
+                // Success
+                respEl.innerText = `200 OK - ${data.message}`;
+                respEl.style.color = "green";
+                detailsEl.style.display = "none";
+            } else {
+                // Error (e.g. 500)
+                respEl.innerText = `${response.status} ${response.statusText} - ${data.message}`;
+                respEl.style.color = "red";
+                detailsEl.innerText = data.details || "";
+                detailsEl.style.display = "block";
+            }
         } catch (error) {
             document.getElementById("response").innerText = "Error: " + error;
+            document.getElementById("response").style.color = "red";
+            document.getElementById("details").style.display = "none";
         }
     });
 </script>
