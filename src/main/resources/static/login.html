@@ -4,104 +4,149 @@
     <meta charset="UTF-8">
     <title>Equinix Login</title>
     <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: #ffffff;
-      position: relative;
-      overflow: hidden;
-    }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f8f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
 
-    /* Faint watermark logo in background */
-    body::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: url("/images/equinix.png") no-repeat center;
-      background-size: 400px auto;
-      opacity: 0.05;
-      width: 600px;
-      height: 600px;
-      z-index: 0;
-    }
+        .login-container {
+            background: #fff;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            width: 340px;
+            text-align: center;
+            position: relative;
+        }
 
-    /* Login card */
-    .login-card {
-      position: relative;
-      z-index: 1;
-      background: #fff;
-      padding: 40px;
-      border-radius: 16px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-      width: 340px;
-      text-align: center;
-    }
+        .login-container img {
+            width: 120px;
+            margin-bottom: 20px;
+        }
 
-    .login-card img {
-      width: 120px;
-      margin-bottom: 20px;
-    }
+        h1 {
+            margin-bottom: 20px;
+            color: #d6001c;
+        }
 
-    .login-card h2 {
-      margin-bottom: 25px;
-      color: #d6001c;
-      font-size: 24px;
-    }
+        label {
+            display: block;
+            margin-top: 12px;
+            text-align: left;
+            font-weight: bold;
+            color: #333;
+        }
 
-    .login-card input {
-      width: 100%;
-      padding: 12px;
-      margin: 12px 0;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 15px;
-      transition: all 0.3s ease;
-    }
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-top: 6px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+            transition: border 0.3s;
+        }
 
-    .login-card input:focus {
-      border-color: #d6001c;
-      outline: none;
-      box-shadow: 0 0 6px rgba(214, 0, 28, 0.3);
-    }
+        input:focus {
+            border-color: #d6001c;
+        }
 
-    .login-card button {
-      width: 100%;
-      padding: 12px;
-      background: #d6001c;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background 0.3s ease, transform 0.2s ease;
-    }
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 8px;
+            background: #d6001c;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
 
-    .login-card button:hover {
-      background: #a80015;
-      transform: translateY(-2px);
-    }
+        button:hover {
+            background: #a80015;
+        }
 
-    .login-card button:active {
-      transform: translateY(1px);
-    }
-  </style>
+        #response {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        #details {
+            display: none;
+            margin-top: 10px;
+            text-align: left;
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 8px;
+            color: #c7254e;
+            font-family: monospace;
+            font-size: 13px;
+            white-space: pre-wrap;
+        }
+    </style>
 </head>
 <body>
-<div class="login-card">
+<div class="login-container">
     <img src="/images/equinix.png" alt="Equinix Logo">
-    <h2>Equinix Login</h2>
-    <form>
-        <input type="text" placeholder="Username" required>
-        <input type="password" placeholder="Password" required>
+    <h1>Login</h1>
+    <form id="loginForm">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+
         <button type="submit">Login</button>
     </form>
+
+    <p id="response"></p>
+    <pre id="details"></pre>
 </div>
+
+<script>
+    document.getElementById("loginForm").addEventListener("submit", async function (event) {
+        event.preventDefault();
+
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        try {
+            const response = await fetch("/api/login", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: `username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}`
+            });
+
+            const respEl = document.getElementById("response");
+            const detailsEl = document.getElementById("details");
+
+            const data = await response.json();
+
+            if (response.ok) {
+                // Success
+                respEl.innerText = `200 OK - ${data.message}`;
+                respEl.style.color = "green";
+                detailsEl.style.display = "none";
+            } else {
+                // Error (e.g. 500)
+                respEl.innerText = `${response.status} ${response.statusText} - ${data.message}`;
+                respEl.style.color = "red";
+                detailsEl.innerText = data.details || "";
+                detailsEl.style.display = "block";
+            }
+        } catch (error) {
+            document.getElementById("response").innerText = "Error: " + error;
+            document.getElementById("response").style.color = "red";
+            document.getElementById("details").style.display = "none";
+        }
+    });
+</script>
 </body>
 </html>

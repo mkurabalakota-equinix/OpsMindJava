@@ -3706,3 +3706,136 @@ java.lang.NullPointerException: Cannot invoke "String.toString()" because "risky
 2025-09-16T14:37:16.344 INFO  [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2025-09-16T14:37:16.344 INFO  [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2025-09-16T14:37:16.345 INFO  [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-09-16T15:37:28.412 INFO  [main] com.ai.mind.ops.Main - Starting Main using Java 17.0.11 with PID 32905 (/Users/mkurabalakota/Documents/GitHub/OpsMindJava/target/classes started by mkurabalakota in /Users/mkurabalakota/Documents/GitHub/OpsMindJava)
+2025-09-16T15:37:28.413 INFO  [main] com.ai.mind.ops.Main - No active profile set, falling back to 1 default profile: "default"
+2025-09-16T15:37:29.132 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8889 (http)
+2025-09-16T15:37:29.138 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8889"]
+2025-09-16T15:37:29.139 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-16T15:37:29.139 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2025-09-16T15:37:29.176 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-16T15:37:29.177 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 731 ms
+2025-09-16T15:37:29.502 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2025-09-16T15:37:29.526 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8889"]
+2025-09-16T15:37:29.553 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8889 (http) with context path '/'
+2025-09-16T15:37:29.569 INFO  [main] com.ai.mind.ops.Main - Started Main in 1.551 seconds (process running for 1.892)
+2025-09-16T16:22:34.203 INFO  [http-nio-8889-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-16T16:22:34.205 INFO  [http-nio-8889-exec-3] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-16T16:22:34.210 INFO  [http-nio-8889-exec-3] o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2025-09-16T16:24:41.414 INFO  [main] com.ai.mind.ops.Main - Starting Main using Java 17.0.11 with PID 33972 (/Users/mkurabalakota/Documents/GitHub/OpsMindJava/target/classes started by mkurabalakota in /Users/mkurabalakota/Documents/GitHub/OpsMindJava)
+2025-09-16T16:24:41.415 INFO  [main] com.ai.mind.ops.Main - No active profile set, falling back to 1 default profile: "default"
+2025-09-16T16:24:42.123 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8889 (http)
+2025-09-16T16:24:42.128 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8889"]
+2025-09-16T16:24:42.129 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-16T16:24:42.130 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2025-09-16T16:24:42.165 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-16T16:24:42.166 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 723 ms
+2025-09-16T16:24:42.483 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2025-09-16T16:24:42.508 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8889"]
+2025-09-16T16:24:42.536 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8889 (http) with context path '/'
+2025-09-16T16:24:42.555 INFO  [main] com.ai.mind.ops.Main - Started Main in 1.466 seconds (process running for 1.982)
+2025-09-16T16:24:44.939 INFO  [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-16T16:24:44.940 INFO  [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-16T16:24:44.941 INFO  [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-09-16T16:26:23.956 INFO  [main] com.ai.mind.ops.Main - Starting Main using Java 17.0.11 with PID 34123 (/Users/mkurabalakota/Documents/GitHub/OpsMindJava/target/classes started by mkurabalakota in /Users/mkurabalakota/Documents/GitHub/OpsMindJava)
+2025-09-16T16:26:23.957 INFO  [main] com.ai.mind.ops.Main - No active profile set, falling back to 1 default profile: "default"
+2025-09-16T16:26:24.614 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8889 (http)
+2025-09-16T16:26:24.620 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8889"]
+2025-09-16T16:26:24.621 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-16T16:26:24.621 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2025-09-16T16:26:24.652 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-16T16:26:24.653 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 667 ms
+2025-09-16T16:26:24.966 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2025-09-16T16:26:25.138 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8889"]
+2025-09-16T16:26:25.176 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8889 (http) with context path '/'
+2025-09-16T16:26:25.198 INFO  [main] com.ai.mind.ops.Main - Started Main in 1.559 seconds (process running for 1.855)
+2025-09-16T16:26:28.338 INFO  [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-16T16:26:28.339 INFO  [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-16T16:26:28.339 INFO  [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-09-16T16:28:56.696 INFO  [main] com.ai.mind.ops.Main - Starting Main using Java 17.0.11 with PID 34338 (/Users/mkurabalakota/Documents/GitHub/OpsMindJava/target/classes started by mkurabalakota in /Users/mkurabalakota/Documents/GitHub/OpsMindJava)
+2025-09-16T16:28:56.697 INFO  [main] com.ai.mind.ops.Main - No active profile set, falling back to 1 default profile: "default"
+2025-09-16T16:28:57.323 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8889 (http)
+2025-09-16T16:28:57.336 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8889"]
+2025-09-16T16:28:57.337 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-16T16:28:57.337 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2025-09-16T16:28:57.384 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-16T16:28:57.385 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 660 ms
+2025-09-16T16:28:57.754 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2025-09-16T16:28:57.781 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8889"]
+2025-09-16T16:28:57.816 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8889 (http) with context path '/'
+2025-09-16T16:28:57.835 INFO  [main] com.ai.mind.ops.Main - Started Main in 1.451 seconds (process running for 1.8)
+2025-09-16T16:28:58.444 INFO  [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-16T16:28:58.445 INFO  [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-16T16:28:58.445 INFO  [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-09-16T16:32:56.593 INFO  [main] com.ai.mind.ops.Main - Starting Main using Java 17.0.11 with PID 34537 (/Users/mkurabalakota/Documents/GitHub/OpsMindJava/target/classes started by mkurabalakota in /Users/mkurabalakota/Documents/GitHub/OpsMindJava)
+2025-09-16T16:32:56.595 INFO  [main] com.ai.mind.ops.Main - No active profile set, falling back to 1 default profile: "default"
+2025-09-16T16:32:57.249 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8889 (http)
+2025-09-16T16:32:57.263 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8889"]
+2025-09-16T16:32:57.264 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-16T16:32:57.264 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2025-09-16T16:32:57.305 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-16T16:32:57.306 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 682 ms
+2025-09-16T16:32:57.700 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2025-09-16T16:32:57.730 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8889"]
+2025-09-16T16:32:57.763 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8889 (http) with context path '/'
+2025-09-16T16:32:57.783 INFO  [main] com.ai.mind.ops.Main - Started Main in 1.539 seconds (process running for 1.859)
+2025-09-16T16:33:06.241 INFO  [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-16T16:33:06.241 INFO  [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-16T16:33:06.242 INFO  [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-09-16T16:33:09.630 INFO  [http-nio-8889-exec-2] com.ai.mind.ops.DemoController - Login attempt with username: asxcdfvgvh
+2025-09-16T16:33:09.632 ERROR [http-nio-8889-exec-2] com.ai.mind.ops.DemoController - Simulated NPE during login for user asxcdfvgvh
+java.lang.NullPointerException: Cannot invoke "String.toString()" because "risky" is null
+	at com.ai.mind.ops.DemoController.login(DemoController.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
